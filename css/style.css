@@ -46,7 +46,7 @@ a {
 }
 /* start nav bar  */
 .navbar {
-    background-color: #000000dd;
+    background-color: #000000ca;
     z-index: 11;
 }
 nav ul li a {
@@ -92,7 +92,7 @@ nav ul li a:focus:before {
 /* end nav bar */
 /* start hero */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../imgs/together-2643652_1920.jpg);
+    background: linear-gradient(rgba(1, 36, 74, 0.174), rgba(0, 53, 77, 0.183)), url(../imgs/together-2643652_1920.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
