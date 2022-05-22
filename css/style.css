@@ -92,7 +92,7 @@ nav ul li a:focus:before {
 /* end nav bar */
 /* start hero */
 .hero {
-    background: linear-gradient(rgb(0, 0, 0), rgba(0, 13, 19, 0.030)), url(../imgs/together-2643652_1920.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.934), rgba(0, 13, 19, 0.030)), url(../imgs/together-2643652_1920.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
