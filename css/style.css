@@ -1,0 +1,223 @@
+body {
+    scroll-behavior: smooth;
+}
+:root {
+    --main-color: #0DCAF0;
+}
+::selection {
+    background: var(--main-color);
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+.title {
+    position: relative;
+    /* width: fit-content; */
+    padding-bottom: 5px;
+}
+.title::before {
+    content:"";
+    width: 5%;
+    height: 3px;
+    position: absolute;
+    background-color: var(--main-color);
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 0;
+}
+.title-form {
+    position: relative;
+    /* width: fit-content; */
+    padding-bottom: 5px;
+}
+.title-form::before {
+    content:"";
+    width: 15%;
+    height: 3px;
+    position: absolute;
+    background-color: var(--main-color);
+    left:0;
+    /* transform: translate(-50%); */
+    bottom: 0;
+}
+/* start nav bar  */
+.navbar {
+    background-color: #000000dd;
+    z-index: 11;
+}
+nav ul li a {
+    position: relative;
+    overflow: hidden;
+    width: fit-content
+}
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    background-color: #fff;
+    bottom: 0;
+    left: -100%;
+    transition: 0.3s;
+}
+nav ul li a:hover:before {
+    left: 0;
+}
+nav ul li a:focus:before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+}
+.nav-bar a {
+    color: white;
+}
+.navbar-toggler {
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+}
+.navbar-toggler-icon {
+    background-color: white;
+    height: 2px;
+}
+/* end nav bar */
+/* start hero */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../imgs/together-2643652_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.hero .main-text {
+    color: #fff;
+    height: calc(100% - 60px);
+}
+.hello .par {
+    width: 100%;
+    height: 5px;
+    position: relative;
+    background-color: #fff;
+}
+.hello .par span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: aqua;
+}
+.hello p {
+    padding: 3px 0;
+}
+/* end hero */
+.items {
+    padding: 120px 0;
+    background: linear-gradient(rgb(72, 152, 237, 30),rgba(15, 71, 131, 0.8)), url(../imgs/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.carousel-inner {
+    background: linear-gradient(rgb(72, 152, 237, 10),rgba(15, 71, 131, 0.5)), url(../imgs/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 60px;
+    background-attachment: fixed
+}
+.carousel-indicators [data-bs-target] {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    /* position: relative;
+    top: 30px;
+    background-color: black; */
+    /* end cursol */
+}
+/* start section work */
+.work .img-work {
+    overflow: hidden;
+}
+.work .img-work img {
+    transition: .8s ease;
+}
+.work .card-work:hover img {
+    transform: scale(1.3);
+}
+.card-work .test {
+    box-shadow: 0px 3px 18px 0px rgb(168 161 161);
+}
+/* ---------end sectio work------------- */
+.contact {
+    background: linear-gradient(rgb(72, 152, 237, 30),rgba(2, 20, 50, .5)), url(../imgs/overlay-bg.jpg);
+}
+.social ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+.social ul li span {
+    height: 50px;
+    width: 50px;
+    display: block;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    border: 5px solid var(--main-color);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.social ul li span svg {
+    color: var(--main-color);
+    font-size: 20px;
+}
+.social ul li span:hover {
+    border-color: rgb(226, 222, 222);
+    background-color: var(--main-color);
+}
+.social ul li span:hover svg {
+    color: #fff;
+}
+/* start section services */
+.services .services-card .inner-services {
+    box-shadow: 0px 3px 18px 0px rgb(168 161 161);
+}
+.services .services-card .inner-services svg {
+    font-size: 40px;
+    margin-bottom: 10px;
+    border: 6px solid var(--main-color);
+    padding: 20px;
+    border-radius: 50%;
+    transition: .5s;
+}
+.services .services-card .inner-services:hover svg {
+    background-color: var(--main-color);
+    border: 6px solid rgb(171, 166, 166);
+    color: white;
+}
+/* -----------end services section-------------- */
+/* start blog section  */
+.blog .travel .card-work .test .img-work {
+    position: relative;
+}
+.blog .travel .card-work .test .img-work .test-div {
+    position: absolute;
+    bottom: -10px;
+    color: #f8f9fa;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: var(--main-color);
+    padding: 2px 25px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.blog .travel .card-work .test .morgan img {
+    width: 40px;
+    border-radius: 50%;
+}
